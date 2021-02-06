@@ -63,8 +63,14 @@ public:
     QSpacerItem *verticalSpacer;
     QFrame *frame_7;
     QGridLayout *gridLayout_3;
+    QSpacerItem *horizontalSpacer_6;
+    QFrame *frame_6;
+    QGridLayout *gridLayout_2;
+    QLabel *label_8;
     QFrame *frame_3;
     QGridLayout *gridLayout;
+    QSpacerItem *verticalSpacer_2;
+    QSpacerItem *horizontalSpacer_8;
     QVBoxLayout *verticalLayout_3;
     QFrame *frame_2;
     QVBoxLayout *verticalLayout;
@@ -73,11 +79,10 @@ public:
     QLabel *label_4;
     QLabel *labelTransactionsStatus;
     QSpacerItem *horizontalSpacer;
+    QSpacerItem *verticalSpacer_4;
     QListView *listTransactions;
-    QFrame *frame_6;
-    QGridLayout *gridLayout_2;
-    QLabel *label_8;
-    QSpacerItem *horizontalSpacer_6;
+    QSpacerItem *horizontalSpacer_7;
+    QSpacerItem *verticalSpacer_3;
 
     void setupUi(QWidget *OverviewPage)
     {
@@ -620,18 +625,48 @@ public:
         gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
         gridLayout_3->setHorizontalSpacing(9);
         gridLayout_3->setContentsMargins(0, 0, 0, 0);
+        horizontalSpacer_6 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout_3->addItem(horizontalSpacer_6, 0, 1, 1, 1);
+
+        frame_6 = new QFrame(frame_7);
+        frame_6->setObjectName(QString::fromUtf8("frame_6"));
+        frame_6->setMinimumSize(QSize(390, 256));
+        frame_6->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        frame_6->setFrameShape(QFrame::NoFrame);
+        frame_6->setFrameShadow(QFrame::Raised);
+        frame_6->setLineWidth(0);
+        gridLayout_2 = new QGridLayout(frame_6);
+        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
+        label_8 = new QLabel(frame_6);
+        label_8->setObjectName(QString::fromUtf8("label_8"));
+        label_8->setMaximumSize(QSize(250, 250));
+        label_8->setPixmap(QPixmap(QString::fromUtf8(":/images/about")));
+        label_8->setScaledContents(true);
+
+        gridLayout_2->addWidget(label_8, 0, 0, 1, 1);
+
+
+        gridLayout_3->addWidget(frame_6, 0, 2, 1, 1);
+
         frame_3 = new QFrame(frame_7);
         frame_3->setObjectName(QString::fromUtf8("frame_3"));
         frame_3->setMinimumSize(QSize(390, 0));
-        frame_3->setMaximumSize(QSize(600, 16777215));
+        frame_3->setMaximumSize(QSize(600, 390));
         frame_3->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
         frame_3->setFrameShape(QFrame::NoFrame);
         frame_3->setFrameShadow(QFrame::Raised);
         frame_3->setLineWidth(-1);
         gridLayout = new QGridLayout(frame_3);
-        gridLayout->setSpacing(1);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        gridLayout->setContentsMargins(1, 1, 1, 1);
+        verticalSpacer_2 = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout->addItem(verticalSpacer_2, 0, 1, 1, 1);
+
+        horizontalSpacer_8 = new QSpacerItem(10, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer_8, 1, 0, 1, 1);
+
         verticalLayout_3 = new QVBoxLayout();
         verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
         frame_2 = new QFrame(frame_3);
@@ -641,6 +676,7 @@ public:
         frame_2->setLineWidth(-1);
         verticalLayout = new QVBoxLayout(frame_2);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setContentsMargins(0, -1, 0, -1);
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         horizontalSpacer_3 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
@@ -668,6 +704,10 @@ public:
 
         verticalLayout->addLayout(horizontalLayout_2);
 
+        verticalSpacer_4 = new QSpacerItem(20, 5, QSizePolicy::Minimum, QSizePolicy::Fixed);
+
+        verticalLayout->addItem(verticalSpacer_4);
+
         listTransactions = new QListView(frame_2);
         listTransactions->setObjectName(QString::fromUtf8("listTransactions"));
         listTransactions->setStyleSheet(QString::fromUtf8("QListView { background: transparent; }"));
@@ -682,34 +722,18 @@ public:
         verticalLayout_3->addWidget(frame_2);
 
 
-        gridLayout->addLayout(verticalLayout_3, 0, 0, 1, 1);
+        gridLayout->addLayout(verticalLayout_3, 1, 1, 1, 1);
+
+        horizontalSpacer_7 = new QSpacerItem(10, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer_7, 1, 2, 1, 1);
+
+        verticalSpacer_3 = new QSpacerItem(20, 19, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout->addItem(verticalSpacer_3, 2, 1, 1, 1);
 
 
         gridLayout_3->addWidget(frame_3, 0, 0, 1, 1);
-
-        frame_6 = new QFrame(frame_7);
-        frame_6->setObjectName(QString::fromUtf8("frame_6"));
-        frame_6->setMinimumSize(QSize(390, 256));
-        frame_6->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
-        frame_6->setFrameShape(QFrame::NoFrame);
-        frame_6->setFrameShadow(QFrame::Raised);
-        frame_6->setLineWidth(0);
-        gridLayout_2 = new QGridLayout(frame_6);
-        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
-        label_8 = new QLabel(frame_6);
-        label_8->setObjectName(QString::fromUtf8("label_8"));
-        label_8->setMaximumSize(QSize(250, 250));
-        label_8->setPixmap(QPixmap(QString::fromUtf8(":/images/about")));
-        label_8->setScaledContents(true);
-
-        gridLayout_2->addWidget(label_8, 0, 0, 1, 1);
-
-
-        gridLayout_3->addWidget(frame_6, 0, 2, 1, 1);
-
-        horizontalSpacer_6 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        gridLayout_3->addItem(horizontalSpacer_6, 0, 1, 1, 1);
 
 
         gridLayout_11->addWidget(frame_7, 1, 0, 1, 1);
@@ -746,11 +770,11 @@ public:
 #ifndef QT_NO_TOOLTIP
         labelWalletStatus->setToolTip(QApplication::translate("OverviewPage", "The displayed information may be out of date. Your wallet automatically synchronizes with the bitFlowers network after a connection is established, but this process has not completed yet.", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
-        label_4->setText(QApplication::translate("OverviewPage", "<b>Recent transactions</b>", 0, QApplication::UnicodeUTF8));
+        label_8->setText(QString());
+        label_4->setText(QApplication::translate("OverviewPage", "<b>Recent Transactions</b>", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
         labelTransactionsStatus->setToolTip(QApplication::translate("OverviewPage", "The displayed information may be out of date. Your wallet automatically synchronizes with the bitFlowers network after a connection is established, but this process has not completed yet.", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
-        label_8->setText(QString());
     } // retranslateUi
 
 };
