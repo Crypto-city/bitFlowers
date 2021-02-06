@@ -3266,7 +3266,7 @@
                    <string notr="true">color: rgb(0, 0, 0);</string>
                   </property>
                   <property name="text">
-                   <string>&lt;b&gt;Recent transactions&lt;/b&gt;</string>
+                   <string>&lt;b&gt;Recent Transactions&lt;/b&gt;</string>
                   </property>
                  </widget>
                 </item>
