@@ -964,7 +964,7 @@
                <string notr="true">color: rgb(255, 255, 255);</string>
               </property>
               <property name="text">
-               <string notr="true">0 CIR</string>
+               <string notr="true">0 PETAL</string>
               </property>
               <property name="textInteractionFlags">
                <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -1348,7 +1348,7 @@
                <string notr="true">color: rgb(255, 255, 255);</string>
               </property>
               <property name="text">
-               <string notr="true">0 CIR</string>
+               <string notr="true">0 PETAL</string>
               </property>
               <property name="textInteractionFlags">
                <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -1963,7 +1963,7 @@
                <string notr="true">color: rgb(255, 255, 255);</string>
               </property>
               <property name="text">
-               <string notr="true">0 CIR</string>
+               <string notr="true">0 PETAL</string>
               </property>
               <property name="textInteractionFlags">
                <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -2172,7 +2172,7 @@
                <string notr="true">color: rgb(255, 255, 255);</string>
               </property>
               <property name="text">
-               <string notr="true">0 CIR</string>
+               <string notr="true">0 PETAL</string>
               </property>
               <property name="textInteractionFlags">
                <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -2615,7 +2615,7 @@
                <number>-1</number>
               </property>
               <property name="text">
-               <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;0 CIR&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;0 PETAL&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
               <property name="textFormat">
                <enum>Qt::RichText</enum>
