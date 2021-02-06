@@ -108,6 +108,8 @@ private:
 	BlockBrowser *blockBrowser;
 
     QMovie *syncIconMovie;
+    QMovie *syncedIconMovie;
+    QMovie *stakingIconMovie;
 
     uint64_t nWeight;
 

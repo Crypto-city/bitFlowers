@@ -28,3 +28,8 @@ void AboutDialog::on_buttonBox_accepted()
 {
     close();
 }
+
+void AboutDialog::on_label_9_linkActivated(const QString &link)
+{
+
+}

@@ -1,6 +1,7 @@
 <RCC>
     <qresource prefix="/icons">
         <file alias="address-book">res/icons/address-book.png</file>
+        <file alias="bitcoin">res/icons/about.png</file>
         <file alias="quit">res/icons/quit.png</file>
         <file alias="send">res/icons/send.png</file>
         <file alias="connect_0">res/icons/connect0_16.png</file>
@@ -43,6 +44,7 @@
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
+        <file alias="banner">res/images/banner.png</file>
         <file alias="splash">res/images/splash.png</file>
         <file alias="bkg">res/images/bkg.png</file>
         <file alias="wallet">res/images/wallet.png</file>
@@ -65,6 +67,8 @@
     <qresource prefix="/movies">
         <file alias="update_spinner">res/movies/update_spinner.mng</file>
         <file alias="bees">res/movies/bees.gif</file>
+        <file alias="sun">res/movies/sun.gif</file>
+        <file alias="rain_grow">res/movies/rain_grow.gif</file>
     </qresource>
     <qresource prefix="/fonts"/>
     <qresource prefix="/translations">
