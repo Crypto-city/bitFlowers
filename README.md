@@ -1,6 +1,7 @@
 
 
-bitFlowers (PETAL)
+bitFlowers (PETAL) 
+The eGift Cryptocurrency
 -----------------
 
 
