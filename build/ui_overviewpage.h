@@ -29,6 +29,31 @@ class Ui_OverviewPage
 {
 public:
     QGridLayout *gridLayout_11;
+    QFrame *frame_7;
+    QGridLayout *gridLayout_3;
+    QSpacerItem *horizontalSpacer_6;
+    QFrame *frame_6;
+    QGridLayout *gridLayout_2;
+    QSpacerItem *verticalSpacer_4;
+    QSpacerItem *horizontalSpacer_9;
+    QSpacerItem *horizontalSpacer_10;
+    QLabel *label_8;
+    QSpacerItem *verticalSpacer_5;
+    QFrame *frame_3;
+    QGridLayout *gridLayout;
+    QSpacerItem *verticalSpacer_2;
+    QSpacerItem *horizontalSpacer_8;
+    QVBoxLayout *verticalLayout_3;
+    QFrame *frame_2;
+    QVBoxLayout *verticalLayout;
+    QHBoxLayout *horizontalLayout_2;
+    QSpacerItem *horizontalSpacer_3;
+    QLabel *label_4;
+    QLabel *labelTransactionsStatus;
+    QSpacerItem *horizontalSpacer;
+    QListView *listTransactions;
+    QSpacerItem *horizontalSpacer_7;
+    QSpacerItem *verticalSpacer_3;
     QFrame *frame_5;
     QGridLayout *gridLayout_10;
     QFrame *frame_4;
@@ -61,28 +86,6 @@ public:
     QLabel *labelWalletStatus;
     QSpacerItem *horizontalSpacer_2;
     QSpacerItem *verticalSpacer;
-    QFrame *frame_7;
-    QGridLayout *gridLayout_3;
-    QSpacerItem *horizontalSpacer_6;
-    QFrame *frame_6;
-    QGridLayout *gridLayout_2;
-    QLabel *label_8;
-    QFrame *frame_3;
-    QGridLayout *gridLayout;
-    QSpacerItem *verticalSpacer_2;
-    QSpacerItem *horizontalSpacer_8;
-    QVBoxLayout *verticalLayout_3;
-    QFrame *frame_2;
-    QVBoxLayout *verticalLayout;
-    QHBoxLayout *horizontalLayout_2;
-    QSpacerItem *horizontalSpacer_3;
-    QLabel *label_4;
-    QLabel *labelTransactionsStatus;
-    QSpacerItem *horizontalSpacer;
-    QSpacerItem *verticalSpacer_4;
-    QListView *listTransactions;
-    QSpacerItem *horizontalSpacer_7;
-    QSpacerItem *verticalSpacer_3;
 
     void setupUi(QWidget *OverviewPage)
     {
@@ -134,6 +137,145 @@ public:
         gridLayout_11 = new QGridLayout(OverviewPage);
         gridLayout_11->setObjectName(QString::fromUtf8("gridLayout_11"));
         gridLayout_11->setContentsMargins(7, -1, 7, -1);
+        frame_7 = new QFrame(OverviewPage);
+        frame_7->setObjectName(QString::fromUtf8("frame_7"));
+        frame_7->setFrameShape(QFrame::NoFrame);
+        frame_7->setFrameShadow(QFrame::Raised);
+        gridLayout_3 = new QGridLayout(frame_7);
+        gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
+        gridLayout_3->setHorizontalSpacing(9);
+        gridLayout_3->setContentsMargins(0, 0, 0, 0);
+        horizontalSpacer_6 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout_3->addItem(horizontalSpacer_6, 0, 1, 1, 1);
+
+        frame_6 = new QFrame(frame_7);
+        frame_6->setObjectName(QString::fromUtf8("frame_6"));
+        frame_6->setMinimumSize(QSize(390, 330));
+        frame_6->setMaximumSize(QSize(16777215, 330));
+        frame_6->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        frame_6->setFrameShape(QFrame::NoFrame);
+        frame_6->setFrameShadow(QFrame::Raised);
+        frame_6->setLineWidth(0);
+        gridLayout_2 = new QGridLayout(frame_6);
+        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
+        verticalSpacer_4 = new QSpacerItem(20, 55, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_2->addItem(verticalSpacer_4, 2, 1, 1, 1);
+
+        horizontalSpacer_9 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout_2->addItem(horizontalSpacer_9, 1, 0, 1, 1);
+
+        horizontalSpacer_10 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        gridLayout_2->addItem(horizontalSpacer_10, 1, 2, 1, 1);
+
+        label_8 = new QLabel(frame_6);
+        label_8->setObjectName(QString::fromUtf8("label_8"));
+        label_8->setMinimumSize(QSize(250, 250));
+        label_8->setMaximumSize(QSize(250, 250));
+        label_8->setPixmap(QPixmap(QString::fromUtf8(":/images/about")));
+        label_8->setScaledContents(true);
+
+        gridLayout_2->addWidget(label_8, 1, 1, 1, 1);
+
+        verticalSpacer_5 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout_2->addItem(verticalSpacer_5, 0, 1, 1, 1);
+
+
+        gridLayout_3->addWidget(frame_6, 0, 2, 1, 1);
+
+        frame_3 = new QFrame(frame_7);
+        frame_3->setObjectName(QString::fromUtf8("frame_3"));
+        frame_3->setMinimumSize(QSize(390, 330));
+        frame_3->setMaximumSize(QSize(390, 330));
+        frame_3->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        frame_3->setFrameShape(QFrame::NoFrame);
+        frame_3->setFrameShadow(QFrame::Plain);
+        frame_3->setLineWidth(0);
+        gridLayout = new QGridLayout(frame_3);
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        gridLayout->setContentsMargins(0, 0, 0, 0);
+        verticalSpacer_2 = new QSpacerItem(20, 10, QSizePolicy::Minimum, QSizePolicy::Preferred);
+
+        gridLayout->addItem(verticalSpacer_2, 0, 1, 1, 1);
+
+        horizontalSpacer_8 = new QSpacerItem(8, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer_8, 1, 0, 1, 1);
+
+        verticalLayout_3 = new QVBoxLayout();
+        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
+        frame_2 = new QFrame(frame_3);
+        frame_2->setObjectName(QString::fromUtf8("frame_2"));
+        frame_2->setFrameShape(QFrame::NoFrame);
+        frame_2->setFrameShadow(QFrame::Raised);
+        frame_2->setLineWidth(-1);
+        verticalLayout = new QVBoxLayout(frame_2);
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setContentsMargins(0, -1, 0, -1);
+        horizontalLayout_2 = new QHBoxLayout();
+        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
+        horizontalSpacer_3 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_2->addItem(horizontalSpacer_3);
+
+        label_4 = new QLabel(frame_2);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);"));
+
+        horizontalLayout_2->addWidget(label_4);
+
+        labelTransactionsStatus = new QLabel(frame_2);
+        labelTransactionsStatus->setObjectName(QString::fromUtf8("labelTransactionsStatus"));
+        labelTransactionsStatus->setStyleSheet(QString::fromUtf8("QLabel { color: red; }"));
+        labelTransactionsStatus->setText(QString::fromUtf8("(out of sync)"));
+        labelTransactionsStatus->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
+
+        horizontalLayout_2->addWidget(labelTransactionsStatus);
+
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_2->addItem(horizontalSpacer);
+
+
+        verticalLayout->addLayout(horizontalLayout_2);
+
+        listTransactions = new QListView(frame_2);
+        listTransactions->setObjectName(QString::fromUtf8("listTransactions"));
+        listTransactions->setStyleSheet(QString::fromUtf8("QListView { background: transparent; }"));
+        listTransactions->setFrameShape(QFrame::NoFrame);
+        listTransactions->setFrameShadow(QFrame::Plain);
+        listTransactions->setLineWidth(0);
+        listTransactions->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+        listTransactions->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+        listTransactions->setSelectionMode(QAbstractItemView::NoSelection);
+        listTransactions->setResizeMode(QListView::Adjust);
+
+        verticalLayout->addWidget(listTransactions);
+
+
+        verticalLayout_3->addWidget(frame_2);
+
+
+        gridLayout->addLayout(verticalLayout_3, 1, 1, 1, 1);
+
+        horizontalSpacer_7 = new QSpacerItem(15, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+
+        gridLayout->addItem(horizontalSpacer_7, 1, 2, 1, 1);
+
+        verticalSpacer_3 = new QSpacerItem(20, 19, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout->addItem(verticalSpacer_3, 2, 1, 1, 1);
+
+
+        gridLayout_3->addWidget(frame_3, 0, 0, 1, 1);
+
+
+        gridLayout_11->addWidget(frame_7, 1, 0, 1, 1);
+
         frame_5 = new QFrame(OverviewPage);
         frame_5->setObjectName(QString::fromUtf8("frame_5"));
         frame_5->setMinimumSize(QSize(0, 201));
@@ -617,127 +759,6 @@ public:
 
         gridLayout_11->addWidget(frame_5, 0, 0, 1, 1);
 
-        frame_7 = new QFrame(OverviewPage);
-        frame_7->setObjectName(QString::fromUtf8("frame_7"));
-        frame_7->setFrameShape(QFrame::NoFrame);
-        frame_7->setFrameShadow(QFrame::Raised);
-        gridLayout_3 = new QGridLayout(frame_7);
-        gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
-        gridLayout_3->setHorizontalSpacing(9);
-        gridLayout_3->setContentsMargins(0, 0, 0, 0);
-        horizontalSpacer_6 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        gridLayout_3->addItem(horizontalSpacer_6, 0, 1, 1, 1);
-
-        frame_6 = new QFrame(frame_7);
-        frame_6->setObjectName(QString::fromUtf8("frame_6"));
-        frame_6->setMinimumSize(QSize(390, 256));
-        frame_6->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
-        frame_6->setFrameShape(QFrame::NoFrame);
-        frame_6->setFrameShadow(QFrame::Raised);
-        frame_6->setLineWidth(0);
-        gridLayout_2 = new QGridLayout(frame_6);
-        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
-        label_8 = new QLabel(frame_6);
-        label_8->setObjectName(QString::fromUtf8("label_8"));
-        label_8->setMaximumSize(QSize(250, 250));
-        label_8->setPixmap(QPixmap(QString::fromUtf8(":/images/about")));
-        label_8->setScaledContents(true);
-
-        gridLayout_2->addWidget(label_8, 0, 0, 1, 1);
-
-
-        gridLayout_3->addWidget(frame_6, 0, 2, 1, 1);
-
-        frame_3 = new QFrame(frame_7);
-        frame_3->setObjectName(QString::fromUtf8("frame_3"));
-        frame_3->setMinimumSize(QSize(390, 0));
-        frame_3->setMaximumSize(QSize(600, 390));
-        frame_3->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
-        frame_3->setFrameShape(QFrame::NoFrame);
-        frame_3->setFrameShadow(QFrame::Raised);
-        frame_3->setLineWidth(-1);
-        gridLayout = new QGridLayout(frame_3);
-        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        verticalSpacer_2 = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        gridLayout->addItem(verticalSpacer_2, 0, 1, 1, 1);
-
-        horizontalSpacer_8 = new QSpacerItem(10, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
-
-        gridLayout->addItem(horizontalSpacer_8, 1, 0, 1, 1);
-
-        verticalLayout_3 = new QVBoxLayout();
-        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
-        frame_2 = new QFrame(frame_3);
-        frame_2->setObjectName(QString::fromUtf8("frame_2"));
-        frame_2->setFrameShape(QFrame::NoFrame);
-        frame_2->setFrameShadow(QFrame::Raised);
-        frame_2->setLineWidth(-1);
-        verticalLayout = new QVBoxLayout(frame_2);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        verticalLayout->setContentsMargins(0, -1, 0, -1);
-        horizontalLayout_2 = new QHBoxLayout();
-        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
-        horizontalSpacer_3 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_2->addItem(horizontalSpacer_3);
-
-        label_4 = new QLabel(frame_2);
-        label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);"));
-
-        horizontalLayout_2->addWidget(label_4);
-
-        labelTransactionsStatus = new QLabel(frame_2);
-        labelTransactionsStatus->setObjectName(QString::fromUtf8("labelTransactionsStatus"));
-        labelTransactionsStatus->setStyleSheet(QString::fromUtf8("QLabel { color: red; }"));
-        labelTransactionsStatus->setText(QString::fromUtf8("(out of sync)"));
-        labelTransactionsStatus->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
-
-        horizontalLayout_2->addWidget(labelTransactionsStatus);
-
-        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_2->addItem(horizontalSpacer);
-
-
-        verticalLayout->addLayout(horizontalLayout_2);
-
-        verticalSpacer_4 = new QSpacerItem(20, 5, QSizePolicy::Minimum, QSizePolicy::Fixed);
-
-        verticalLayout->addItem(verticalSpacer_4);
-
-        listTransactions = new QListView(frame_2);
-        listTransactions->setObjectName(QString::fromUtf8("listTransactions"));
-        listTransactions->setStyleSheet(QString::fromUtf8("QListView { background: transparent; }"));
-        listTransactions->setFrameShape(QFrame::NoFrame);
-        listTransactions->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-        listTransactions->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-        listTransactions->setSelectionMode(QAbstractItemView::NoSelection);
-
-        verticalLayout->addWidget(listTransactions);
-
-
-        verticalLayout_3->addWidget(frame_2);
-
-
-        gridLayout->addLayout(verticalLayout_3, 1, 1, 1, 1);
-
-        horizontalSpacer_7 = new QSpacerItem(10, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
-
-        gridLayout->addItem(horizontalSpacer_7, 1, 2, 1, 1);
-
-        verticalSpacer_3 = new QSpacerItem(20, 19, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        gridLayout->addItem(verticalSpacer_3, 2, 1, 1, 1);
-
-
-        gridLayout_3->addWidget(frame_3, 0, 0, 1, 1);
-
-
-        gridLayout_11->addWidget(frame_7, 1, 0, 1, 1);
-
 
         retranslateUi(OverviewPage);
 
@@ -747,6 +768,11 @@ public:
     void retranslateUi(QWidget *OverviewPage)
     {
         OverviewPage->setWindowTitle(QApplication::translate("OverviewPage", "Form", 0, QApplication::UnicodeUTF8));
+        label_8->setText(QString());
+        label_4->setText(QApplication::translate("OverviewPage", "<b>Recent Transactions</b>", 0, QApplication::UnicodeUTF8));
+#ifndef QT_NO_TOOLTIP
+        labelTransactionsStatus->setToolTip(QApplication::translate("OverviewPage", "The displayed information may be out of date. Your wallet automatically synchronizes with the bitFlowers network after a connection is established, but this process has not completed yet.", 0, QApplication::UnicodeUTF8));
+#endif // QT_NO_TOOLTIP
         label_6->setText(QApplication::translate("OverviewPage", "Stake:", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
         labelStake->setToolTip(QApplication::translate("OverviewPage", "Total of coins that was staked, and do not yet count toward the current balance", 0, QApplication::UnicodeUTF8));
@@ -769,11 +795,6 @@ public:
         labelTotalText->setText(QApplication::translate("OverviewPage", "<html><head/><body><p><span style=\" font-size:10pt;\">Total:</span></p></body></html>", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
         labelWalletStatus->setToolTip(QApplication::translate("OverviewPage", "The displayed information may be out of date. Your wallet automatically synchronizes with the bitFlowers network after a connection is established, but this process has not completed yet.", 0, QApplication::UnicodeUTF8));
-#endif // QT_NO_TOOLTIP
-        label_8->setText(QString());
-        label_4->setText(QApplication::translate("OverviewPage", "<b>Recent Transactions</b>", 0, QApplication::UnicodeUTF8));
-#ifndef QT_NO_TOOLTIP
-        labelTransactionsStatus->setToolTip(QApplication::translate("OverviewPage", "The displayed information may be out of date. Your wallet automatically synchronizes with the bitFlowers network after a connection is established, but this process has not completed yet.", 0, QApplication::UnicodeUTF8));
 #endif // QT_NO_TOOLTIP
     } // retranslateUi
 
