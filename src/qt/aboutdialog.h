@@ -23,6 +23,7 @@ private:
 
 private slots:
     void on_buttonBox_accepted();
+    void on_label_9_linkActivated(const QString &link);
 };
 
 #endif // ABOUTDIALOG_H
