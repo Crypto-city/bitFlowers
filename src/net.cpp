@@ -1237,18 +1237,14 @@ void MapPort()
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strDNSSeed[][2] = {
-      {"nlab", "petal00.bit-flowers.com"},
-      {"nlab", "petal01.bit-flowers.com"},
-      {"nlab", "petal02.bit-flowers.com"},
-      {"nlab", "petal03.bit-flowers.com"},
-      {"nlab", "petal04.bit-flowers.com"},
-      {"nlab", "petal05.bit-flowers.com"},
-      {"nlab", "petal00.nerdlabs001.com"},
-      {"nlab", "petal01.nerdlabs001.com"},
-      {"nlab", "petal02.nerdlabs001.com"},
-      {"nlab", "petal03.nerdlabs001.com"},
-      {"nlab", "petal04.nerdlabs001.com"},
-      {"nlab", "petal05.nerdlabs001.com"},
+      {"Crypto-city", "petal0.bit-flowers.com"},
+      {"Crypto-city", "petal1.bit-flowers.com"},
+      {"Crypto-city", "petal2.bit-flowers.com"},
+      {"Crypto-city", "petal3.bit-flowers.com"},
+      {"Crypto-city", "petal4.bit-flowers.com"},
+      {"Crypto-city", "petal5.bit-flowers.com"},
+      {"nlab", "petal.nerdlabs001.com"},
+
 
 };
 
