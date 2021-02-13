@@ -10,7 +10,7 @@ https://bit-flowers.com
 
 
 Discord 
-https://discord.gg/nxGju4nMb3
+https://discord.bit-flowers.com
 
 
 Github: 
