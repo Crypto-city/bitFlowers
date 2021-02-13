@@ -16,11 +16,6 @@ https://discord.bit-flowers.com
 Github: 
 https://github.com/Crypto-city/bitFlowers
 
-
-Discord:
-https://discord.gg/qQpPyn8
-
-
 Explorer:
 https://explore.bit-flowers.com/
 
