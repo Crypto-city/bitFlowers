@@ -1,0 +1,70 @@
+FROM ubuntu:bionic
+SHELL ["/bin/bash", "-c"]
+
+RUN apt-get update && apt-get install -y \
+    autoconf \
+    automake \
+    autopoint \
+    bash \
+    bison \
+    bzip2 \
+    flex \
+    g++ \
+    g++-multilib \
+    gettext \
+    git \
+    gperf \
+    intltool \
+    libc6-dev-i386 \
+    libgdk-pixbuf2.0-dev \
+    libltdl-dev \
+    libssl-dev \
+    libtool-bin \
+    libxml-parser-perl \
+    lzip \
+    make \
+    openssl \
+    p7zip-full \
+    patch \
+    perl \
+    python \
+    ruby \
+    sed \
+    unzip \
+    wget \
+    xz-utils
+
+RUN mkdir /cross && cd /cross && git clone https://github.com/mxe/mxe.git && cd mxe && git checkout build-2021-01-10
+
+WORKDIR /cross/mxe
+
+RUN make MXE_TARGETS=x86_64-w64-mingw32.static qtbase boost openssl -j2 JOBS=2
+RUN make MXE_TARGETS=x86_64-w64-mingw32.static MXE_PLUGIN_DIRS=plugins/examples/openssl1.0/ openssl1.0
+
+WORKDIR /cross
+
+ENV MXE_PATH=/cross/mxe
+ENV MXE_INCLUDE=$MXE_PATH/usr/x86_64-w64-mingw32.static/include
+
+RUN wget http://download.oracle.com/berkeley-db/db-5.3.28.tar.gz && \
+   tar zxvf db-5.3.28.tar.gz && \
+   cd db-5.3.28 && \
+   rm -rf build_mxe && \
+   mkdir build_mxe && \
+   cd build_mxe && \
+   sed -i "s/WinIoCtl.h/winioctl.h/g" ../src/dbinc/win_db.h && \
+   CC=$MXE_PATH/usr/bin/x86_64-w64-mingw32.static-gcc \
+   CXX=$MXE_PATH/usr/bin/x86_64-w64-mingw32.static-g++ \
+   CPPFLAGS=-I$MXE_INCLUDE \
+        ../dist/configure \
+        --disable-replication \
+        --enable-mingw \
+        --enable-cxx \
+        --host x86_64 \
+        --prefix=$MXE_PATH/usr/x86_64-w64-mingw32.static && \
+   make && make install
+
+ENV PATH="/cross/mxe/usr/bin:${PATH}"
+
+ENTRYPOINT $MXE_PATH/usr/x86_64-w64-mingw32.static/qt5/bin/qmake USE_UPNP=- USE_O1=1 /app/src/bitFlowers-qt-mxe64.pro && \
+   make -f Makefile.Release && cp release/bitFlowers-qt.exe /app/res/
