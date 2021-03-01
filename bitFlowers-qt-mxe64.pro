@@ -136,6 +136,13 @@ contains(USE_O3, 1) {
     QMAKE_CXXFLAGS += -O3
     QMAKE_CFLAGS += -O3
 }
+contains(USE_O1, 1) {
+    message(Building O1 optimization flag)
+    QMAKE_CXXFLAGS_RELEASE -= -O2
+    QMAKE_CFLAGS_RELEASE -= -O2
+    QMAKE_CXXFLAGS += -O1
+    QMAKE_CFLAGS += -O1
+}
 
 *-g++-32 {
     message("32 platform, adding -msse2 flag")
