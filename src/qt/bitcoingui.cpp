@@ -151,7 +151,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 
     // Progress bar and label for blocks download
     progressBarLabel = new QLabel();
-    progressBarLabel->setVisible(OP_FALSE);
+    progressBarLabel->setVisible(false);
     progressBar = new QProgressBar();
     addToolBarBreak(Qt::AllToolBarAreas);
     QToolBar *toolbar2 = addToolBar(tr("Tabs toolbar"));
