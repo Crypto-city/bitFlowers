@@ -860,6 +860,9 @@ color: rgb(255, 255, 255);</string>
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(238, 238, 236);</string>
+         </property>
          <property name="text">
           <string>Balance:</string>
          </property>
@@ -875,6 +878,9 @@ color: rgb(255, 255, 255);</string>
          </property>
          <property name="cursor">
           <cursorShape>IBeamCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color: rgb(238, 238, 236);</string>
          </property>
          <property name="text">
           <string>123.456 PETAL</string>

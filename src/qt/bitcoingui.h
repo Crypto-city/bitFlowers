@@ -77,6 +77,7 @@ private:
     QLabel *labelBlocksIcon;
     QLabel *progressBarLabel;
     QProgressBar *progressBar;
+    QToolBar *toolbar2;
 
     QMenuBar *appMenuBar;
     QAction *overviewAction;
