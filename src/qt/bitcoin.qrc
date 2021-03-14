@@ -1,6 +1,6 @@
 <RCC>
     <qresource prefix="/icons">
-        <file alias="toolbar">res/icons/32.png</file>
+        <file alias="toolbar">res/icons/toolbar.png</file>
         <file alias="address-book">res/icons/address-book.png</file>
         <file alias="bitcoin">res/icons/about.png</file>
         <file alias="quit">res/icons/quit.png</file>
