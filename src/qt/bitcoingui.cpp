@@ -136,6 +136,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 
     // Create status bar
     statusBar();
+    statusBar()->setStyleSheet("QStatusBar { background: white; spacing: 0px; width: 900px; }");
 
 
     // Status bar notification icons
@@ -543,13 +544,13 @@ void BitcoinGUI::setNumBlocks(int count, int nTotalBlocks)
 
         if (strStatusBarWarnings.isEmpty())
         {
-            progressBarLabel->setText(tr("Synchronizing with network..."));
+            progressBarLabel->setText(tr("       Synchronizing with network...       "));
             progressBarLabel->setVisible(true);
             progressBar->setFormat(tr("~%n block(s) remaining", "", nRemainingBlocks));
             progressBar->setMaximum(nTotalBlocks);
             progressBar->setValue(count);
             progressBar->setVisible(true);
-            progressBar->setStyleSheet("QProgressBar { background-color: grey; border: 0px solid grey; border-radius: 0px; padding: 1px; text-align: center; color: white; width: 575px; } QProgressBar::chunk { background: QLinearGradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #3ddc97, stop: 1 #031d44); border-radius: 0px; margin: 0px; }");
+            progressBar->setStyleSheet("QProgressBar { background-color: grey; border: 0px solid grey; border-radius: 0px; padding: 0px; text-align: center; color: white; width: 588px; margin-right: 5px; } QProgressBar::chunk { background: QLinearGradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #3ddc97, stop: 1 #031d44); border-radius: 0px; margin: 0px; }");
         }
 
         tooltip = tr("Downloaded %1 of %2 blocks of transaction history (%3% done).").arg(count).arg(nTotalBlocks).arg(nPercentageDone, 0, 'f', 2);
@@ -558,7 +559,7 @@ void BitcoinGUI::setNumBlocks(int count, int nTotalBlocks)
     {
         if (strStatusBarWarnings.isEmpty())
             progressBarLabel->setVisible(false);
-progressBarLabel->setText(tr("count %1 nTotalBlocks %2").arg(count).arg(nTotalBlocks));
+        progressBarLabel->setText(tr("count %1 nTotalBlocks %2").arg(count).arg(nTotalBlocks));
         progressBar->setVisible(false);
         tooltip = tr("Downloaded %1 blocks of transaction history.").arg(count);
     }
