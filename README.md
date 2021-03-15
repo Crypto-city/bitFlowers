@@ -54,7 +54,7 @@ https://www.crypto-city.com/bitflowers/info/
 
 If you are unfamiliar with building a coin project from a github repo on a Linux virtual machine, this video below (click link) will guide you with this process. It is important to isolate a build environment on a virtual machine, so that the dependencies do not intefere with your primary OS. Once you have completed the guide, you can move on to the *bitFlowers* build process. 
 
-https://www.youtube.com/watch?v=ThsxqznrgCw
+https://www.crypto-city.com/video/play/1282/how-to-install-ubuntu-18-04-on-virtualbox-with-guest-additions/
 
 -----------------
 
