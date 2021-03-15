@@ -51,6 +51,13 @@ https://www.crypto-city.com/bitflowers/info/
 -----------------
 ### **To build on Linux (Ubuntu 18.04)** 
 -----------------
+
+If you are unfamiliar with building a coin project from a github repo on a Linux virtual machine, this video below (click link) will guide you with this process. It is important to isolate a build environment on a virtual machine, so that the dependencies do not intefere with your primary OS. Once you have completed the guide, you can move on to the *bitFlowers* build process. 
+
+https://www.youtube.com/watch?v=ThsxqznrgCw
+
+-----------------
+
 #### *1. Installing dependencies* 
 -----------------
 sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils python3 -y 
