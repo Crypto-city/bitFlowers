@@ -1,5 +1,5 @@
 
-
+![Image of bitFlowers Logo](https://bit-flowers.com/images/1.png)
 bitFlowers (PETAL) 
 The eGift Cryptocurrency
 -----------------
