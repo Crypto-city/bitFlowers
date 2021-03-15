@@ -49,7 +49,7 @@ https://www.crypto-city.com/bitflowers/info/
 
  
  
-###**To build on Linux (Ubuntu 18.04)** 
+### **To build on Linux (Ubuntu 18.04)** 
 
 sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils python3 -y 
 
