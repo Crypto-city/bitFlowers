@@ -109,7 +109,11 @@ make
 
 ./bitFlowers-qt
 
+-----------------
 
+#### *inquiries: info@bit-flowers.com* 
+
+-----------------
 
 
 
