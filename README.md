@@ -51,7 +51,8 @@ https://www.crypto-city.com/bitflowers/info/
 -----------------
 ### **To build on Linux (Ubuntu 18.04)** 
 -----------------
-
+#### *1. Installing dependencies* 
+-----------------
 sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils python3 -y 
 
 sudo apt-get install software-properties-common -y
@@ -84,13 +85,25 @@ sudo apt install git
 
 git clone https://github.com/crypto-city/bitflowers
 
-#### **go to repo dir**
+-----------------
+
+#### *2. Compiling* 
+
+-----------------
+
+#### **go to repo directory**
 
 qmake bitFlowers-qt.pro
 
 make clean
 
 make 
+
+-----------------
+
+#### *3. Running the bitFlowers core wallet* 
+
+-----------------
 
 #### **to run**
 
