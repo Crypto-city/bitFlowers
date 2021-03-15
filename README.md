@@ -47,9 +47,10 @@ https://bitcointalk.org/index.php?topic=5298879.msg55797567#msg55797567
 Crypto-city Page
 https://www.crypto-city.com/bitflowers/info/
 
- 
+-----------------
  
 ### **To build on Linux (Ubuntu 18.04)** 
+-----------------
 
 sudo apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev bsdmainutils python3 -y 
 
@@ -83,7 +84,7 @@ sudo apt install git
 
 git clone https://github.com/crypto-city/bitflowers
 
-*go to repo dir*
+# **go to repo dir**
 
 qmake bitFlowers-qt.pro
 
@@ -91,7 +92,7 @@ make clean
 
 make 
 
-*to run*
+# **to run**
 
 ./bitFlowers-qt
 
