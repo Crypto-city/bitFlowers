@@ -48,7 +48,6 @@ Crypto-city Page
 https://www.crypto-city.com/bitflowers/info/
 
 -----------------
- 
 ### **To build on Linux (Ubuntu 18.04)** 
 -----------------
 
@@ -84,7 +83,7 @@ sudo apt install git
 
 git clone https://github.com/crypto-city/bitflowers
 
-# **go to repo dir**
+#### **go to repo dir**
 
 qmake bitFlowers-qt.pro
 
@@ -92,7 +91,7 @@ make clean
 
 make 
 
-# **to run**
+#### **to run**
 
 ./bitFlowers-qt
 
