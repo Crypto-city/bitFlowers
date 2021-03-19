@@ -108,6 +108,14 @@ make
 
 -----------------
 
+#### **to compile the daemon**
+
+go to repo > src
+
+sudo make -f makefile.unix USE_UPNP=1
+
+-----------------
+
 #### *3. Running the bitFlowers core wallet* 
 
 -----------------
