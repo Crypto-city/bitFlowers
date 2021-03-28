@@ -2013,7 +2013,7 @@
                   </font>
                  </property>
                  <property name="text">
-                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://medium.bit-flowers.com/&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#ffffff;&quot;&gt;Meduim&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;http://medium.bit-flowers.com/&quot;&gt;&lt;span style=&quot; font-size:16pt; color:#ffffff;&quot;&gt;Medium&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
                  <property name="openExternalLinks">
                   <bool>true</bool>
