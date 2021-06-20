@@ -25,7 +25,7 @@
 using namespace std;
 using namespace boost;
 
-static const int MAX_OUTBOUND_CONNECTIONS = 16;
+static const int MAX_OUTBOUND_CONNECTIONS = 50;
 bool nDisableStaking = false;
 
 void ThreadMessageHandler2(void* parg);
@@ -1237,13 +1237,13 @@ void MapPort()
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strDNSSeed[][2] = {
-      {"Crypto-city", "petal0.bit-flowers.com"},
-      {"Crypto-city", "petal1.bit-flowers.com"},
-      {"Crypto-city", "petal2.bit-flowers.com"},
-      {"Crypto-city", "petal3.bit-flowers.com"},
-      {"Crypto-city", "petal4.bit-flowers.com"},
-      {"Crypto-city", "petal5.bit-flowers.com"},
-      {"nlab", "petal.nerdlabs001.com"},
+      {"seed1", "206.189.4.103"},
+      {"seed2", "46.101.181.206"},
+      //{"Crypto-city", "petal2.bit-flowers.com"}, //to-do: update the seeds with dns
+      //{"Crypto-city", "petal3.bit-flowers.com"},
+      //{"Crypto-city", "petal4.bit-flowers.com"},
+      //{"Crypto-city", "petal5.bit-flowers.com"},
+      //{"nlab", "petal.nerdlabs001.com"},
 
 
 };

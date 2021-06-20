@@ -57,9 +57,15 @@ static const int fHaveUPnP = false;
 static const uint256 hashGenesisBlock("0x00000084b5a26d2f949390d892e6b45a7c4ae4d94b4fd17da9cad3801bcec9de");
 static const uint256 hashGenesisBlockTestNet("0x00000084b5a26d2f949390d892e6b45a7c4ae4d94b4fd17da9cad3801bcec9de");
 
+static const unsigned int FORK_TIME = 1623669332;
 inline int64_t PastDrift(int64_t nTime)   { return nTime - 5 * 60; } // up to 5 minutes from the past   - down from 10 for security
 inline int64_t FutureDrift(int64_t nTime) { return nTime + 5 * 60; } // up to 5 minutes from the future
-
+inline int64_t MainNetDrift(int64_t nTime) { return nTime + 15; }
+inline int64_t TestingDrift(int64_t nTime) { return nTime + 10 * 60; }
+inline bool IsDriftReduced(int64_t nTime) { return nTime > FORK_TIME; }
+inline int64_t FutureDriftV2(int64_t nTime) {
+    return IsDriftReduced(nTime) ? MainNetDrift(nTime) : TestingDrift(nTime);
+}
 extern libzerocoin::Params* ZCParams;
 extern CScript COINBASE_FLAGS;
 extern CCriticalSection cs_main;
