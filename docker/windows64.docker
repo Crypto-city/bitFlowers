@@ -67,4 +67,4 @@ RUN wget http://download.oracle.com/berkeley-db/db-5.3.28.tar.gz && \
 ENV PATH="/cross/mxe/usr/bin:${PATH}"
 
 ENTRYPOINT $MXE_PATH/usr/x86_64-w64-mingw32.static/qt5/bin/qmake USE_UPNP=- USE_O1=1 /app/src/bitFlowers-qt-mxe64.pro && \
-   make -f Makefile.Release && cp release/bitFlowers-qt.exe /app/res/
+   make -f Makefile.Release -j8 && cp release/bitFlowers-qt.exe /app/res/
