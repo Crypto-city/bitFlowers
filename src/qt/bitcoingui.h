@@ -70,7 +70,7 @@ private:
     AddressBookPage *receiveCoinsPage;
     SendCoinsDialog *sendCoinsPage;
     SignVerifyMessageDialog *signVerifyMessageDialog;
-
+ 
     QLabel *labelEncryptionIcon;
     QLabel *labelStakingIcon;
     QLabel *labelConnectionsIcon;
@@ -107,10 +107,6 @@ private:
     TransactionView *transactionView;
     RPCConsole *rpcConsole;
 	BlockBrowser *blockBrowser;
-
-    QMovie *syncIconMovie;
-    QMovie *syncedIconMovie;
-    QMovie *stakingIconMovie;
 
     uint64_t nWeight;
 

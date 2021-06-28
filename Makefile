@@ -847,6 +847,7 @@ qrc_bitcoin.cpp: src/qt/bitcoin.qrc \
 		src/qt/res/icons/add.png \
 		src/qt/res/icons/staking_on.png \
 		src/qt/res/icons/connect0_16.png \
+        src/qt/res/icons/tick.png \
 		src/qt/res/icons/connect1_16.png \
 		src/qt/res/icons/quit.png \
 		src/qt/res/icons/connect2_16.png \
@@ -868,6 +869,7 @@ qrc_bitcoin.cpp: src/qt/bitcoin.qrc \
 		src/qt/res/icons/lock_closed.png \
 		src/qt/res/icons/sync.png \
 		src/qt/res/icons/editcopy.png \
+        src/qt/res/icons/verify.png \
 		src/qt/res/icons/receive.png \
 		src/qt/res/icons/transaction0.png \
 		src/qt/res/icons/clock1.png \

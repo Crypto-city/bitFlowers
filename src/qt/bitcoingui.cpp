@@ -187,10 +187,6 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 
     //toolbar2->setStyleSheet("#toolbar2 QToolButton { background: transparent;border:none;padding:2px;margin:10px;height:54px;width:42px; }");
 
-    syncIconMovie = new QMovie(":/movies/bees", "gif", this);
-    syncedIconMovie = new QMovie(":/movies/sun", "gif", this);
-    stakingIconMovie = new QMovie(":/movies/rain_grow", "gif", this);
-
     // Clicking on a transaction on the overview page simply sends you to transaction history page
     connect(overviewPage, SIGNAL(transactionClicked(QModelIndex)), this, SLOT(gotoHistoryPage()));
     connect(overviewPage, SIGNAL(transactionClicked(QModelIndex)), transactionView, SLOT(focusTransaction(QModelIndex)));
@@ -370,7 +366,7 @@ void BitcoinGUI::createToolBars()
     toolbar->addAction(historyAction);
     toolbar->addAction(addressBookAction);
     toolbar->addAction(blockAction);
-    toolbar->setStyleSheet("#toolbar { border:0px;height:100%;padding-top:100px; background: transparent; text-align: center; color: black;min-width:100px;max-width:100px;} QToolBar QToolButton:hover {background-image: url(:images/toolbtnh); background-color: transparent;} QToolBar QToolButton:selected {background-color: transparent;} QToolBar QToolButton:checked {background-image: url(:images/toolbtns); background-color: transparent;} QToolBar QToolButton:pressed {background-color: transparent;} QToolBar QToolButton { margin: 0px; background-image:url(:images/toolbtn); font-family:'Bebas'; font-size:12px; min-width:100px;max-width:100px; min-height:49px;max-height:49px; color: white; text-align: center; margin-left: 1px; }");
+    toolbar->setStyleSheet("#toolbar { border:0px;height:100%;padding-top:100px; background: transparent; text-align: center; color: black;min-width:100px;max-width:100px;} QToolBar QToolButton:hover {background-image: url(:images/toolbtnh); background-color: transparent;} QToolBar QToolButton:selected {background-color: transparent;} QToolBar QToolButton:checked {background-image: url(:images/toolbtns); background-color: transparent;} QToolBar QToolButton:pressed {background-color: transparent;} QToolBar QToolButton { margin: 0px; background-image:url(:images/toolbtn); font-family:'Bebas'; font-size:12px; min-width:100px;max-width:100px; min-height:48px;max-height:48px; color: white; text-align: center; margin-left: 1px; }");
 }
 
 void BitcoinGUI::setClientModel(ClientModel *clientModel)
@@ -602,16 +598,14 @@ void BitcoinGUI::setNumBlocks(int count, int nTotalBlocks)
     if(secs < 90*60 && count >= nTotalBlocks)
     {
         tooltip = tr("Up to date") + QString(".<br>") + tooltip;
-        labelBlocksIcon->setMovie(syncedIconMovie);
-        syncedIconMovie->start();
+        labelBlocksIcon->setPixmap(QIcon(":/icons/tick").pixmap(32,32));
 
         overviewPage->showOutOfSyncWarning(false);
     }
     else
     {
         tooltip = tr("Catching up...") + QString("<br>") + tooltip;
-        labelBlocksIcon->setMovie(syncIconMovie);
-        syncIconMovie->start();
+        labelBlocksIcon->setPixmap(QIcon(":/icons/verify").pixmap(32,32));
 
         overviewPage->showOutOfSyncWarning(true);
     }
@@ -998,8 +992,7 @@ void BitcoinGUI::updateStakingIcon()
             text = tr("%n day(s)", "", nEstimateTime/(60*60*24));
         }
 
-        labelStakingIcon->setMovie(stakingIconMovie);
-        stakingIconMovie->start();
+        labelStakingIcon->setPixmap(QIcon(":/icons/growing").pixmap(32,32));
         labelStakingIcon->setToolTip(tr("Staking.<br>Your weight is %1<br>Network weight is %2<br>Expected time to earn reward is %3").arg(nWeight).arg(nNetworkWeight).arg(text));
     }
     else

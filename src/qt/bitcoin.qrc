@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/icons">
+        <file alias="growing">res/icons/growing.png</file>
+        <file alias="verify">res/icons/verify.png</file>
         <file alias="toolbar">res/icons/toolbar.png</file>
         <file alias="address-book">res/icons/address-book.png</file>
         <file alias="bitcoin">res/icons/about.png</file>
@@ -42,6 +44,7 @@
         <file alias="staking_off">res/icons/staking_off.png</file>
         <file alias="staking_on">res/icons/staking_on.png</file>
         <file alias="sync">res/icons/sync.png</file>
+        <file alias="tick">res/icons/tick.png</file>
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
