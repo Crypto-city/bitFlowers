@@ -4,5 +4,5 @@ build-essential libtool autoconf  libboost-dev libboost-chrono-dev libboost-file
 libboost-system-dev libboost-test-dev libboost-thread-dev sudo automake git wget curl libdb4.8-dev bsdmainutils libdb4.8++-dev \
 libminiupnpc-dev libgmp3-dev ufw pkg-config libevent-dev  libdb5.3++ unzip libzmq5 libssl1.0-dev
 cd ..
-qmake bitFlowers.pro
+qmake bitFlowers-qt.pro
 make -j8
