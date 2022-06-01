@@ -2,7 +2,7 @@
 clear
 if ! docker info > /dev/null 2>&1; then
   echo "Docker not installed, downloading and installing"
-  curl -fsSL https://get.docker.com -o get-docker.sh
+  apt-get install curl -y && curl -fsSL https://get.docker.com -o get-docker.sh
   sh get-docker.sh
 else
   echo "Continuing with dockerized way"
