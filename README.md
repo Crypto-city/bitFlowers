@@ -6,47 +6,26 @@
 -----------------
 
 
-Website:
-https://bit-flowers.com
+Crypto-city Page / Website
+https://www.crypto-city.com/bitflowers/wallet/
 
 
 Discord 
-https://discord.bit-flowers.com
+
 
 
 Github: 
 https://github.com/Crypto-city/bitFlowers
 
 Explorer:
-https://explore.bit-flowers.com/
-
-
-Facebook
-https://www.facebook.com/groups/2288046424794045
+https://www.crypto-city.com/bitflowers/explorer/
 
 
 Twitter
-https://twitter.com/eFlower_power
+https://twitter.com/Cryptocitycom
 
 
-Reddit
-http://reddit.com/r/bitFlowers
 
-
-Medium
-https://medium.com/@iCryptony
-
-
-Telegram
-https://t.me/ccflowers
-
-
-bitcointalk
-https://bitcointalk.org/index.php?topic=5298879.msg55797567#msg55797567
-
-
-Crypto-city Page
-https://www.crypto-city.com/bitflowers/info/
 
 -----------------
 ### **To build on Linux (Ubuntu 18.04)** 
