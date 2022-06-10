@@ -1,10 +1,10 @@
 
-![Image of bitFlowers Logo](https://bit-flowers.com/images/1.png)
+![Image of bitFlowers Logo](https://www.crypto-city.com/PF.Base/file/pic/photo/9705ff7b4c16236959148700333565c3.png)
 -----------------
 # *bitFlowers* (PETAL) 
 # The eGift Cryptocurrency
 -----------------
-
+For your safety, please only download from this repo or from the Crypto-city.com website.
 
 Crypto-city Page / Website
 https://www.crypto-city.com/bitflowers/wallet/
