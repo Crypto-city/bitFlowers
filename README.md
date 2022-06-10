@@ -4,7 +4,7 @@
 # *bitFlowers* (PETAL) 
 # The eGift Cryptocurrency
 -----------------
-*Please be aware that iCryptony is no longer with Crypto-city.com.
+*Please be aware that iCryptony (anthonyrjwood) is no longer with Crypto-city.com.
 
 For your safety, please only download from this repo or from the Crypto-city.com website.
 
