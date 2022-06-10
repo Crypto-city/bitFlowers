@@ -10,7 +10,7 @@ Crypto-city Page / Website
 https://www.crypto-city.com/bitflowers/wallet/
 
 
-Discord 
+Discord: https://discord.gg/d4mNNRdm9J
 
 
 
