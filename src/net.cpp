@@ -1248,6 +1248,11 @@ static const char *strDNSSeed[][2] = {
 {"Crypto-city", "p8.crypto-city.com"},
 {"Crypto-city", "p9.crypto-city.com"},
 {"Crypto-city", "p10.crypto-city.com"},
+{"Crypto-city", "p11.crypto-city.com"},
+{"Crypto-city", "p12.crypto-city.com"},
+{"Crypto-city", "p13.crypto-city.com"},
+{"Crypto-city", "p14.crypto-city.com"},
+{"Crypto-city", "p15.crypto-city.com"},
 
 };
 
