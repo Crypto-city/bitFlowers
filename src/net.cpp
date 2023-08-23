@@ -1238,6 +1238,7 @@ void MapPort()
 // The second name should resolve to a list of seed addresses.
 static const char *strDNSSeed[][2] = {
 
+{"Crypto-city", "cc1.asuscomm.com"},
 {"Crypto-city", "p1.crypto-city.com"},      
 {"Crypto-city", "p2.crypto-city.com"}, 
 {"Crypto-city", "p3.crypto-city.com"},
